@@ -111,18 +111,18 @@
     <item id="129590eadedb4bc0a227a5d554216074" cid="PROP010" type="property" owner="c3598ffbaf2a4aa3a5767c58ba661584" creator="" creation-date="02/07/2024 14:43:30" visibility="private">
       <structural-feature multiplicity="1..*" type="Carro" type-id="Class:2033cbf604d244f096ab3e681ff5e458" />
     </item>
-    <item id="132440cf9a6141b38845772ffa737130" cid="PROP040" type="property" name="se relaciona a" owner="3d9a36dc9443413a846860895edf5182" creator="" creation-date="02/13/2024 14:04:07" visibility="undefined">
+    <item id="132440cf9a6141b38845772ffa737130" cid="PROP040" type="property" name="se relaciona a" owner="3d9a36dc9443413a846860895edf5182" creator="" creation-date="02/13/2024 14:04:07" visibility="private">
       <structural-feature multiplicity="1" type="Cupo" type-id="Class:408708de06814ff3940de55381506af6" />
     </item>
     <item id="84972c9e895446348581e9259b65db54" cid="PROP009" type="property" owner="c3598ffbaf2a4aa3a5767c58ba661584" creator="" creation-date="02/07/2024 14:43:30" visibility="private">
       <structural-feature type="Cliente" type-id="Class:dfb4e4ea013d474bac68f85abee8e9bf" />
       <property aggregation="composite" />
     </item>
-    <item id="8beaf71bf47947919c62deebaf852ed8" cid="PROP041" type="property" owner="28b62c1fcee24c2c8e98a1d1b5dd63e9" creator="" creation-date="02/13/2024 14:13:15" visibility="private">
-      <structural-feature type="Cliente" type-id="Class:dfb4e4ea013d474bac68f85abee8e9bf" />
+    <item id="8beaf71bf47947919c62deebaf852ed8" cid="PROP041" type="property" name="se relaciona a" owner="28b62c1fcee24c2c8e98a1d1b5dd63e9" creator="" creation-date="02/13/2024 14:13:15" visibility="private">
+      <structural-feature multiplicity="1" type="Carro" type-id="Class:2033cbf604d244f096ab3e681ff5e458" />
     </item>
-    <item id="ffa9cbbbdd6441c091b925303b4c8106" cid="PROP042" type="property" owner="28b62c1fcee24c2c8e98a1d1b5dd63e9" creator="" creation-date="02/13/2024 14:13:15" visibility="private">
-      <structural-feature type="Pago" type-id="Class:a7317880289f4745bb6e0c1ecb02d97d" />
+    <item id="ffa9cbbbdd6441c091b925303b4c8106" cid="PROP042" type="property" name="se registra para" owner="28b62c1fcee24c2c8e98a1d1b5dd63e9" creator="" creation-date="02/13/2024 14:13:15" visibility="private">
+      <structural-feature multiplicity="1" type="Pago" type-id="Class:a7317880289f4745bb6e0c1ecb02d97d" />
     </item>
     <item id="42913ce3fd314478bd73a52c53b0d3d0" cid="PROP031" type="property" owner="0e94cc0e62244cd0a004d2abc86a6c61" creator="" creation-date="02/13/2024 14:01:27" visibility="private">
       <structural-feature type="Pago" type-id="Class:a7317880289f4745bb6e0c1ecb02d97d" />
@@ -142,7 +142,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pac52ebecaab342d080d4ef64226278a2_790780683" name="ClassDiagram1" order-index="1" expanded="true" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-52,25">
+      <diagram type="uml-class" id="pac52ebecaab342d080d4ef64226278a2_790780683" name="ClassDiagram1" order-index="1" expanded="true" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-143,84">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -200,9 +200,9 @@ Permite definir el papel que juega una entidad en una relacion de asociacion </c
               <attribute id="a81fdce82b7bc45dc9f777186b3927ee8176" cid="PROP026" name="valor" creation-date="02/13/2024 13:59:53" property-ref="264225c40a22486eba257265b0911fde" />
             </attributes>
           </item>
-          <item id="28b62c1fcee24c2c8e98a1d1b5dd63e9" cid="REL010" type="relationship" creator="" creation-date="02/13/2024 14:13:15" from="dfb4e4ea013d474bac68f85abee8e9bf" to="a7317880289f4745bb6e0c1ecb02d97d" visibility="package">
+          <item id="28b62c1fcee24c2c8e98a1d1b5dd63e9" cid="REL010" type="relationship" creator="" creation-date="02/13/2024 14:13:15" from="2033cbf604d244f096ab3e681ff5e458" to="a7317880289f4745bb6e0c1ecb02d97d" visibility="package">
             <owned-items />
-            <relation from="dfb4e4ea013d474bac68f85abee8e9bf" to="a7317880289f4745bb6e0c1ecb02d97d" derived="false">
+            <relation from="2033cbf604d244f096ab3e681ff5e458" to="a7317880289f4745bb6e0c1ecb02d97d" derived="false">
               <start-role id="umlar-6c704df8-dafc-45c2-8a93-3d6cbbfa7c2c" name="" navigability="" association-type="association" visibility="private" property-ref="8beaf71bf47947919c62deebaf852ed8" />
               <end-role id="umlar-16cc9ebb-a3c0-4d23-b3d9-86536d2f810a" name="" navigability="" association-type="association" visibility="private" property-ref="ffa9cbbbdd6441c091b925303b4c8106" />
             </relation>
@@ -269,20 +269,20 @@ Permite definir el papel que juega una entidad en una relacion de asociacion </c
         </abstract-items>
         <layer id="611e22aacfad4f48a4ce4361ee200aec" name="Default" visible="true" enabled="true" locked="false">
           <item id="dfb4e4ea013d474bac68f85abee8e9bf" iid="c98eea9e90764cbbb6da894cbe58af08" show-fields="true" creation-date="02/07/2024 14:37:58" order-index="0" type="entity">
-            <layout ax="129.99995" ay="104.80893" awidth="139.99998" aheight="212" x="129.99995" y="104.80893" width="140" height="170" angle="0.15655518" />
+            <layout ax="395" ay="80.99951" awidth="140" aheight="212" x="395" y="80.99951" width="140" height="170" angle="0.15655518" />
             <classifier />
             <class />
           </item>
           <item id="2033cbf604d244f096ab3e681ff5e458" iid="75bcc2af4d564639b5ce9ccf79a46999" show-fields="true" creation-date="02/07/2024 14:40:28" order-index="1" type="entity">
-            <layout ax="350" ay="130.80894" awidth="140" aheight="159.99995" x="350" y="130.80894" width="140" height="160" />
+            <layout ax="129.99991" ay="106.9995" awidth="140" aheight="159.99995" x="129.99991" y="106.9995" width="140" height="160" />
             <classifier />
             <class />
           </item>
           <item id="c3598ffbaf2a4aa3a5767c58ba661584" iid="ba4000b96f184a8a860b3a101aa77049" creation-date="02/07/2024 14:43:30" order-index="2" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="270" y1="186" x2="350" y2="192" start-border-pos="0.3453072662905105" end-border-pos="0.9046872705221176" start-local-pos="65.00015" end-local-pos="61.000122" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="395" y1="162" x2="270" y2="168" start-border-pos="0.3453072662905105" end-border-pos="0.9046872705221176" start-local-pos="65.00015" end-local-pos="61.000122" name-position="0,20">
               <points>
-                <point x="270" y="186" />
-                <point x="350" y="192" />
+                <point x="395" y="162" />
+                <point x="270" y="168" />
               </points>
             </layout>
             <relation from="dfb4e4ea013d474bac68f85abee8e9bf" from-iid="c98eea9e90764cbbb6da894cbe58af08" to="2033cbf604d244f096ab3e681ff5e458" to-iid="75bcc2af4d564639b5ce9ccf79a46999" />
@@ -310,13 +310,13 @@ Permite definir el papel que juega una entidad en una relacion de asociacion </c
             <layout ax="395" ay="316.99976" awidth="305" aheight="179" x="395" y="316.99976" width="246" height="100" />
           </item>
           <item id="28b62c1fcee24c2c8e98a1d1b5dd63e9" iid="950dd8afd6d64536a6b9cf862b01796d" creation-date="02/13/2024 14:13:15" order-index="7" type="relation">
-            <layout start-role-position="25.000029,15.000007" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="199" y1="317" x2="200" y2="485" start-border-pos="0.6262675014242446" end-border-pos="0.12442902131392182" start-local-pos="69.000046" name-position="0,20">
+            <layout start-role-position="25.809536,47.005394" end-role-position="21.154724,-46.98169" start-multiplicity-position="28.113098,-40.999664" end-multiplicity-position="19.863224,37.969833" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="200" y1="267" x2="200" y2="485" start-border-pos="0.625" end-border-pos="0.12500016348709694" start-local-pos="70" name-position="0,20">
               <points>
-                <point x="199" y="317" />
+                <point x="200" y="267" />
                 <point x="200" y="485" />
               </points>
             </layout>
-            <relation from="dfb4e4ea013d474bac68f85abee8e9bf" from-iid="c98eea9e90764cbbb6da894cbe58af08" to="a7317880289f4745bb6e0c1ecb02d97d" to-iid="e0b3da9c0663444b8a6856e2e23bc6b0" />
+            <relation from="2033cbf604d244f096ab3e681ff5e458" from-iid="75bcc2af4d564639b5ce9ccf79a46999" to="a7317880289f4745bb6e0c1ecb02d97d" to-iid="e0b3da9c0663444b8a6856e2e23bc6b0" />
           </item>
         </layer>
       </diagram>
