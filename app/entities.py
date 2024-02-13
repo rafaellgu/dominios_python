@@ -30,7 +30,7 @@ class Cupo():
         
 class Pago():
     
-    def __init__(self, fecha_inicio, hora_inicio, fecha_fin, hora_fin, valor,carro,cupo):
+    def __init__(self, fecha_inicio, hora_inicio, fecha_fin, hora_fin, valor,carro,cupo,empleado):
         self.fecha_inicio = fecha_inicio
         self.hora_inicio = hora_inicio
         self.fecha_fin = fecha_fin
@@ -38,4 +38,3 @@ class Pago():
         self.valor = valor
         self.carro = carro
         self.cupo = cupo
-        
