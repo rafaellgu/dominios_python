@@ -38,3 +38,9 @@ class Pago():
         self.valor = valor
         self.carro = carro
         self.cupo = cupo
+        self.empleado=empleado
+
+class Empleado():
+    def __init__(self,nombre,codigo):
+        self.nombre = nombre
+        self.codigo = codigo
